@@ -1,22 +1,45 @@
 {% extends "template.html" %}
 {% block content %}
-
-<div id="page1">
-  <a name="about"></a>
+<div id="page0">
   <div class="page-padding"></div>
-  <p>This is what you see on the About page.</p>
-</div> <!--END page1-->
+</div> <!--end page0-->
 
-<div id="page2">
-  <a name="portfolio"></a>
-  <div class="page-padding"></div>
-  <p>This is what you would see on the Portfolio page.</p>
-</div> <!--END page2-->
+<div class="container">
+  <div id="page1">
+    <a name="about"></a>
+    <div class="page-padding"></div>
+    <div class="row">
+      <div class="col-md-4">
+        <p>this is what you see on the about page.</p>
+      </div>
+      <div class="col-md-4">
+        <img src="/static/img/me.jpg" class="img-thumbnail me"></img>
+      </div>
+      <div class="col-md-4">
+        <p>this is what you see on the about page.</p>
+      </div>
+    </div>
+  </div> <!--end page1-->
+</div>
 
-<div id="page3">
-  <a name="contact"></a>
-  <div class="page-padding"></div>
-  <p>This is what you see on the Contact page.</p>
-</div> <!--END page3-->
+<div class="background-sand">
+  <div class="container">
+    <div id="page2">
+      <a name="portfolio"></a>
+      <div class="page-padding"></div>
+      <h2>Projects</h2>
+    </div> <!--end page2-->
+  </div>
+</div>
+
+<div class="background-gray">
+  <div class="container">
+    <div id="page3">
+      <a name="contact"></a>
+      <div class="page-padding"></div>
+      <h2>Contact</h2>
+    </div> <!--end page3-->
+  </div>
+</div>
 
 {% endblock %}
