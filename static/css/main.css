@@ -13,6 +13,7 @@ body {
 	background:rgb(34, 163, 159);
 	height:70px;
 	width:100%;
+  z-index: 9999;
 	}
 
 #nav {
@@ -53,6 +54,15 @@ body {
 #page1 .btn {
   font-size: 30px;
   letter-spacing: 2px;
+}
+
+#page3 .btn-primary {
+  background-color: #22A39F;
+  border-color: #1c8784;
+}
+
+#page3 .btn {
+  letter-spacing: 1px;
 }
 
 
@@ -107,6 +117,7 @@ body {
   line-height: 54px;
   font-size: 54px;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .page-padding {height:90px; width:100%;}
@@ -146,4 +157,8 @@ span.text-content span {
 
 #page2 a:hover span.text-content {
   opacity: 1;
+}
+
+.labell {
+  color: white;
 }
