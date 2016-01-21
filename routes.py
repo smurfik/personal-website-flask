@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from flask_mail import Mail, Message
 import config
 
@@ -19,13 +19,13 @@ mail = Mail(app)
 def home():
     return render_template('home.html')
 
-@app.route('/mail')
+@app.route('/mail', methods=["POST"])
 def send_mail():
     try:
-        msg = Message("Send Mail!",
+        msg = Message(request.form['subject'],
           sender="tamaramitryakova@yahoo.com",
           recipients=["tamaramitryakova@yahoo.com"])
-        msg.body = "Yo!\nHave you heard the good word of Python???"
+        msg.body = request.form['email'] + " " + request.form['message']
         mail.send(msg)
         return 'Mail sent!'
 
