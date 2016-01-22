@@ -30,7 +30,7 @@ def send_mail():
         return render_template('home.html')
 
     except Exception, e:
-        return(str(e))
+        return render_template('home.html')
 
 if __name__ == '__main__':
     port = os.environ.get("PORT") or 5000

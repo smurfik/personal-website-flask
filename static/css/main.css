@@ -126,9 +126,9 @@ body {
 
 .page-padding {height:90px; width:100%;}
 
-a { color:white; text-decoration:none;}
+a { color:white !important; text-decoration:none;}
 
-a:hover { text-decoration:underline;}
+a:hover { text-decoration:none;}
 
 .wrapper {
   width: 100%;
@@ -137,6 +137,18 @@ a:hover { text-decoration:underline;}
 .me {
   border: 3px solid rgb(243, 239, 224);
   margin-top: 200px;
+}
+
+span.icon {
+  right: 91px;
+  position: absolute;
+  top: 46px;
+  z-index: 500;
+}
+
+span.glyphicon {
+  font-size: 25px;
+  color: rgb(34, 163, 159);
 }
 
 span.text-content {
@@ -150,8 +162,9 @@ span.text-content {
   width: 414px;
   left: 91px;
   position: absolute;
-  top: 46px;
+  top: 42px;
   opacity: 0;
+  border-radius: 5px;
 }
 
 span.text-content span {
