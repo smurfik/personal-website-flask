@@ -5,7 +5,7 @@ import config
 app = Flask(__name__)
 
 app.config.update(
-	DEBUG=True,
+	# DEBUG=True,
 	#EMAIL SETTINGS
 	MAIL_SERVER='smtp.mail.yahoo.com',
 	MAIL_PORT=465,
