@@ -1,7 +1,7 @@
 import os
 from flask import Flask, render_template, request
 from flask_mail import Mail, Message
-import config
+# import config
 
 app = Flask(__name__)
 
@@ -11,8 +11,8 @@ app.config.update(
 	MAIL_SERVER='smtp.mail.yahoo.com',
 	MAIL_PORT=465,
 	MAIL_USE_SSL=True,
-	MAIL_USERNAME = config.MAIL_USERNAME,
-	MAIL_PASSWORD = config.MAIL_PASSWORD
+	MAIL_USERNAME = os.environ.get("MAIL_USERNAME"),
+	MAIL_PASSWORD = os.environ.get("MAIL_PASSWORD")
 	)
 mail = Mail(app)
 
