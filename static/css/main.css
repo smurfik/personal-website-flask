@@ -27,7 +27,6 @@ body {
 #page1 {
 	height:700px;
 	width:100%;
-	/* padding-top:110px; */
 	}
 
 #page1 h1 {
@@ -47,15 +46,25 @@ body {
   font-style: italic;
 }
 
+#page1 .bio {
+  font-weight: 200;
+  line-height: 20px;
+  font-size: 18px;
+}
+
 #page1 .btn-primary {
   background-color: #22A39F;
   border-color: #1c8784;
 }
 
 #page1 .btn {
-  margin-top: 53px;
+  /* margin-top: 43px; */
   font-size: 30px;
   letter-spacing: 2px;
+}
+
+.thelink {
+  color: black !important;
 }
 
 #page3 .btn-primary {
@@ -66,15 +75,6 @@ body {
 #page3 .btn {
   letter-spacing: 1px;
 }
-
-
-/* #page0 { */
-/* 	height:1100px; */
-/* 	width:100%; */
-/*   padding: 0; */
-/*   background: url("http://placekitten.com/601/604") no-repeat center fixed; */
-/*   background-size: cover; */
-/* } */
 
 .background-gray {
   background: rgb(67, 66, 66);
