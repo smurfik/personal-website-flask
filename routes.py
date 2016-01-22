@@ -20,7 +20,7 @@ mail = Mail(app)
 def home():
     return render_template('home.html')
 
-@app.route('/mail', methods=["POST"])
+@app.route('/', methods=["POST"])
 def send_mail():
     try:
         msg = Message(request.form['subject'],
@@ -28,7 +28,7 @@ def send_mail():
           recipients=["tamaramitryakova@yahoo.com"])
         msg.body = request.form['email'] + " " + request.form['message']
         mail.send(msg)
-        return 'Mail sent!'
+        return render_template('home.html')
 
     except Exception, e:
         return(str(e))
