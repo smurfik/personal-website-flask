@@ -1,3 +1,4 @@
+import os
 from flask import Flask, render_template, request
 from flask_mail import Mail, Message
 import config
@@ -32,6 +33,6 @@ def send_mail():
     except Exception, e:
         return(str(e))
 
-
 if __name__ == '__main__':
-    app.run()
+    port = os.environ.get("PORT") or 5000
+    app.run("0.0.0.0", port)
