@@ -139,6 +139,8 @@ span.text-content {
   top: 42px;
   opacity: 0;
   border-radius: 5px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 span.text-content span {
