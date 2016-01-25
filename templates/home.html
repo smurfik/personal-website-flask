@@ -3,9 +3,17 @@
 
 <div class="container">
   <div id="page1">
-    <a name="about">I am here</a>
+    <a name="about"></a>
     <div class="row">
       <div class="col-md-7">
+        {% if message %}
+          <div class="col-lg-6 col-lg-offset-3 text-center alert alert-success error alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            Thank you for contacting me!
+          </div>
+        {% endif %}
         <h1>Tammy Pop</h1>
         <p>Web Developer</p>
         <p class="bio">I'm currently an apprentice at <a href="http://code.builders/" class="thelink">Code.Builders</a>. I traveled all the way from Maryland to Seattle to continue my journey to become a web developer. When I'm not busy coding, I can be found dancing.</p><p class="bio">Chocolate, cats, and dogs make me happy.</p>

@@ -27,7 +27,7 @@ def send_mail():
           recipients=["tamaramitryakova@yahoo.com"])
         msg.body = request.form['email'] + " " + request.form['message']
         mail.send(msg)
-        return render_template('home.html')
+        return render_template('home.html', message=True)
 
     except Exception, e:
         return render_template('home.html')

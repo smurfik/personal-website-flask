@@ -30,6 +30,11 @@ body {
 
 /* PAGE 1 */
 
+.error {
+  margin-top: 10px;
+  z-index: 10000;
+}
+
 #page1 {
 	height:700px;
 	width:100%;
