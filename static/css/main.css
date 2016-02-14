@@ -18,14 +18,21 @@ body {
 	height:70px;
 	width:100%;
   z-index: 9999;
-	}
+}
 
 #nav {
-  margin-left: 62.5%;
-  margin-top: 19px;
-  word-spacing: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#nav a {
   font-weight: 600;
   font-size: 22px;
+  margin: 20px;
+}
+
+#nav a:nth-child(1) {
+  margin-right: 35px;
 }
 
 /* PAGE 1 */
