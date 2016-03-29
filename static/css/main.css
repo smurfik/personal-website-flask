@@ -125,10 +125,15 @@ body {
   border: 3px solid rgb(243, 239, 224);
 }
 
+.project-link {
+  display: inline-block;
+  position: relative;
+}
+
 span.icon {
-  right: 91px;
+  right: 12px;
   position: absolute;
-  top: 46px;
+  top: 50px;
   z-index: 500;
 }
 
@@ -146,7 +151,7 @@ span.text-content {
   display: table;
   height: 224px;
   width: 414px;
-  left: 91px;
+  left: 74px;
   position: absolute;
   top: 42px;
   opacity: 0;
