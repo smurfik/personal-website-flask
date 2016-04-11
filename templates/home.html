@@ -6,14 +6,6 @@
     <a name="about"></a>
     <div class="row">
       <div class="col-md-7">
-        {% if message %}
-          <div class="col-lg-6 col-lg-offset-3 text-center alert alert-info error alert-dismissible" role="alert">
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-            Thank you for contacting me!
-          </div>
-        {% endif %}
         <h1>Tammy Pop</h1>
         <p>Web Developer</p>
         <p class="bio">I'm currently an apprentice at <a href="http://code.builders/" class="thelink">Code.Builders</a>. I traveled all the way from Maryland to Seattle to continue my journey to become a web developer. When I'm not busy coding, I can be found dancing.</p><p class="bio">Chocolate, cats, and dogs make me happy.</p>
@@ -56,8 +48,7 @@
 <div class="background-gray">
   <div class="container">
     <div id="page3">
-      <a name="contact"></a>
-      <a href="#contact"><h2>Contact</h2></a>
+      <a name="contact" href="#contact"></a>
       <div class="row text-center">
         <a href="https://twitter.com/smurfikpop">
           <img src="/static/img/twitter.png" class="img-thumbnail info hvr-fade"></img>
@@ -68,35 +59,6 @@
         <a href="https://linkedin.com/pub/tammy-pop/25/abb/7aa">
           <img src="/static/img/linkedin.png" class="img-thumbnail right hvr-fade"></img>
         </a>
-      </div>
-      <div class="row">
-        <div class="col-md-6 col-md-offset-3">
-          <form class="form-horizontal" role="form" method="POST" action="/">
-            <div class="form-group">
-              <label class="control-label col-sm-3 labell" for="email">Your Email:</label>
-              <div class="col-sm-9">
-                <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-sm-3 labell" for="email">Subject:</label>
-              <div class="col-sm-9">
-                <input type="text" class="form-control" id="email" name="subject" placeholder="Enter subject">
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-sm-3 labell" for="pwd">Message:</label>
-              <div class="col-sm-9">
-                <textarea class="form-control" id="pwd" name="message" placeholder="Enter message"></textarea>
-              </div>
-            </div>
-            <div class="form-group">
-              <div class="col-sm-offset-5 col-sm-7">
-                <button type="submit" class="btn btn-primary">Send Message</button>
-              </div>
-            </div>
-          </form>
-        </div>
       </div>
 
     </div> <!--end page3-->
