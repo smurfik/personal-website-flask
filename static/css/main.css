@@ -115,12 +115,11 @@ body {
   margin-top: 30px;
 }
 
-
 #page2 {
-	height:700px;
-	width:100%;
-	background:rgb(243, 239, 224);
-	padding-top:150px;
+	height: 700px;
+	width: 100%;
+	background: rgb(243, 239, 224);
+	padding-top: 150px;
 	}
 
 #page2 h2 {
@@ -181,6 +180,24 @@ span.text-content span {
 
 #page2 a:hover span.text-content {
   opacity: 1;
+}
+
+@media (max-width: 600px) {
+  #page2 {
+    padding-top: 50px;
+  }
+  .project {
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  span.text-content {
+    left: 0px;
+    top: 0px;
+    padding-left: 0px;
+    width: 370px;
+    height: 201px;
+    padding-right: 0px;
+  }
 }
 
 /* PAGE 3 */
