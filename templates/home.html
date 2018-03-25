@@ -1,67 +1,14 @@
 {% extends "template.html" %}
 {% block content %}
 
-<div class="container">
-  <div id="page1">
-    <a name="about"></a>
-    <div class="row">
-      <div class="col-md-7 col-sm-12">
-        <h1>Tammy Pop</h1>
-        <p>Web Developer & Tutor</p>
-        <p class="bio">Brand new to web development? Switching careers? Have lots of Ruby on Rails questions? I'm here to help! Get unstuck and learn a few things in a tutoring session with me.</p><p class="bio">When I'm not busy coding, I can be found dancing. Chocolate, cats, and dogs make me happy.</p>
-        <div class="row">
-          <a href="#portfolio" class="btn btn-primary">Projects</a>
-        </div>
-      </div>
-      <div class="col-md-5 col-sm-12">
-        <img src="/static/img/me.jpg" class="img-thumbnail me"></img>
-      </div>
-    </div>
-  </div> <!--end page1-->
-</div>
-
-<div class="background-sand">
-  <div class="container">
-    <div id="page2">
-      <a href="#portfolio" name="portfolio"><h2>Projects</h2></a>
-      <div class="row">
-        <div class="col-md-6 col-sm-12 extra">
-          <a href="http://dance-places.herokuapp.com/" class="project-link">
-            <img src="/static/img/dance_places.png" class="img-thumbnail project"></img>
-            <span class="glyphicon glyphicon-new-window icon"></span>
-            <span class="text-content"><span>Rails application that aggregates info about dance studios from 3 different APIs </span></span>
-          </a>
-        </div>
-        <div class="col-md-6 col-sm-12 extra">
-          <a href="http://image-rating.herokuapp.com/" class="project-link">
-            <img src="/static/img/image_rating.png" class="img-thumbnail project"></img>
-            <span class="glyphicon glyphicon-new-window icon"></span>
-            <span class="text-content"><span>Social image sharing application where users can upload images for storage and peer review</span></span>
-          </a>
-        </div>
-      </div>
-    </div> <!--end page2-->
-  </div>
-</div>
-
-<div class="background-gray">
-  <div class="container">
-    <div id="page3">
-      <a name="contact" href="#contact"></a>
-      <div class="row text-center">
-        <a href="https://twitter.com/smurfikpop">
-          <img src="/static/img/twitter.png" class="img-thumbnail info hvr-fade"></img>
-        </a>
-        <a href="https://github.com/smurfik">
-          <img src="/static/img/git.png" class="img-thumbnail center hvr-fade"></img>
-        </a>
-        <a href="https://linkedin.com/pub/tammy-pop/25/abb/7aa">
-          <img src="/static/img/linkedin.png" class="img-thumbnail right hvr-fade"></img>
-        </a>
-      </div>
-
-    </div> <!--end page3-->
-  </div>
+<img src="/static/img/profile.jpg"></img>
+<h1>Tammy Pop</h1>
+<div id="social-links">
+  <a href="https://github.com/smurfik"><i class="fab fa-github-square fa-2x"></i></a>
+  <a href="https://linkedin.com/pub/tammy-pop/25/abb/7aa"><i class="fab fa-linkedin fa-2x"></i></a>
+  <a href="https://twitter.com/smurfikpop"><i class="fab fa-twitter-square fa-2x"></i></a>
+  <a href="https://stackoverflow.com/users/6566747/tammy-pop?tab=profile"><i class="fab fa-stack-overflow fa-2x"></i></a>
+  <a href="https://www.instagram.com/tammy.pop/"><i class="fab fa-instagram fa-2x"></i></a>
 </div>
 
 {% endblock %}
