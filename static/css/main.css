@@ -1,13 +1,38 @@
-* { outline: 1px pink solid }
+/* * { outline: 1px pink solid } */
 
-a:hover { text-decoration:none;}
+a:hover { text-decoration:none; }
 
 svg {
-  color: green;
+  color: #A9A9A9;
+}
+
+svg:hover {
+  color: #808080;
+}
+
+body {
+  background: white;
 }
 
 img {
+  display: block;
   height: 200px;
   width: 200px;
+  margin: 10em auto 0px auto;
   border-radius: 100%;
+  padding: 4px;
+  border: 1px solid #ddd;
+}
+
+h1 {
+  text-align: center;
+  margin: 0.3em auto;
+  color: #696969;
+}
+
+#social-links {
+  width: 200px;
+  margin: 0em auto;
+  display: flex;
+  justify-content: space-evenly;
 }
